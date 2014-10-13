@@ -1,84 +1,83 @@
-
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Data Journalism</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-    <title>Data Journalism - Brian Clifton</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/cover.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
-
-
-    <script src="/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-    <div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-<!--           <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Cover</h3>
-              <ul class="nav masthead-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
- -->
-          <div class="inner cover">
-            <h1 class="cover-heading">Ethnic Power Relations Data</h1>
-            <h3><a href="http://www.epr.ucla.edu/" target="blank">Provided by UCLA</a></h3>
-            <p class="lead">
-            	This dataset provides insights for the ethnic dynamics of people in power by country. 
-            	In more politically unstable countries, it supports historical power shifts by indicating the change between discriminated and shared positions or domination.<br>
-            	Since it is mainly historical data, it would be best when used in conjunction with other data relating to ethnicity or geo-politics, and does not tell a compelling story on its own. 
-            </p>
+        <h1>Data Journalism: Final Project Ideas</h1>
+        <div>
+            <h3>IS IT TIME TO TEAR GAS THE PROTESTERS?</h3>
+            <hr>
             <p>
-              <a href="assets/enigma-edu.ucla.epr.ethnic-armed-conflict-8a4f3b173d94be5e7a63a8100ce76af9.csv" class="btn btn-lg btn-info">Ethnic Power Relations Dataset</a>
+                Since the 1970s, peaceful demonstrations are occurring more frequently around the world, especially in recent years with the Arab Spring and the various Occupy movements, and today with the events in Missouri and in Hong Kong. Without fail, instead of engaging the citizens in meaningful conversations, the state sends in the police. These situations quickly devolve into the authorities tear-gassing the crowds, close range pepper spraying, sending in plain clothes thugs to attack the protesters, shutting down the cellular networks, and/or firing rubber bullets at the unarmed demonstrators. This happens time and time again, to the degree that it seems the state is acting according to a schedule.
+                </p>
+                <p>
+                To better understand the state’s standard response to protesters, I will make a interactive timeline that will compare the scope and timing of major turning points in several recent protests around the world. A majority of this data is found in disparate sources that are mostly crowd-compiled on site such as <a href="https://en.wikipedia.org/wiki/Timeline_of_the_2014_Venezuelan_protests">Wikipedia</a> which already has a number of detailed timelines for these events, as well as traditional news media, but other non-conventional sources of events will be included as well, such as social media feeds. This data will need to be normalized, and which can be done by cross-referencing it with <a href="http://www.gdeltproject.org/">GDELT for event data</a>.
+                </p>
+                <p>
+                Since people are the primary source for the information, speaking with individuals who experienced the events firsthand will help to corroborate the timeline, as well as leading to other sources of information. This conversation will begin with key people such as <a href="https://en.wikipedia.org/wiki/Clay_Shirky">Clay Shirky</a>, <a href="http://www.theatlantic.com/zeynep-tufekci/">Zeynep Tufekci</a>, and <a href="https://en.wikipedia.org/wiki/Quinn_Norton">Quinn Norton</a>, which will lead to others as well.
+                </p>
+                <p>
+                To accomplish this, I will likely need to become knowledgeable with scraping websites, using prepackaged tools such as <a href="https://www.kimonolabs.com/">Kimono</a> or <a href="https://www.parsehub.com/">ParseHub</a>, but most likely writing my own. It is also important to have this data sharable and open to the public, so creating either a static CSV file or a simple database is important (I am familiar with basic databases but would like to become more comfortable with creating them). Additionally, I would like to improve my ability to render the graphics in <a href="http://d3js.org/">D3.js</a>.
+                </p>
+                <p>
+                The finished piece would be at home with any major online news outlet such as The New York Times, The Guardian, or Al Jazeera America, to name a few.
             </p>
-          </div>
-
-<!--           <div class="mastfoot">
-            <div class="inner">
-              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-            </div>
-          </div> -->
-
         </div>
+        <div>
+            <h3>DOES INEQUALITY INCREASE DURING WAR?</h3>
+            <hr>
+            <p> 
+                President Obama recently asked Congress to allocate an additional $5 Billion dollars to fund a new campaign for the perpetual War on Terror. This is surprising in light of multiple government shutdowns and heated debates regarding the contentious and delicately balanced budget. It also confronts us with a  few questions: Does the killing of people in the Middle East come at the expense of the social welfare for the citizens of the United States? Does inequality become more extreme during war? If so, who benefits and who suffers in our country from wars fought on the other side of the world? Does the reallocation of funding for government programs, such as Center for Disease control or Medicaid towards the procurement and manufacturing of weapons, specifically worsen living conditions the poor?
+                </p>
+                <p>
+                To answer these questions, an examination of the changing rates of income levels as they occur during times of various military engagements the United States is in with foreign countries. Data to illustrate these trends can be found in the <a href="http://www.census.gov/hhes/www/income/">Census (for income)</a> and using <a href="https://en.wikipedia.org/wiki/Timeline_of_United_States_military_operations">crowdsourced data available on Wikipedia to determine times of war</a>. This, however, only correlates the two trends. To determine a direct connection, exploring the overseas interests of <a href="https://app.enigma.io/table/us.gov.government-spending.contracts.2014?search%5B%5D=%40maj_agency_cat%20(%229700%3A%20DEPT%20OF%20DEFENSE%22)&row=0&col=19&page=1">corporations through contracts awarded by the US Government for the Dept. of Defense</a>, is a place to start.
+                </p>
+                <p>
+                By speaking with individuals who have researched the US corporate interests in war zones, I’ll be able to determine what other resources that will better contextualize the data. People such as <a href="http://costsofwar.org/article/who-we-are">Catherine Lutz and Neta Crawford of the Costs of War Project</a>, or <a href="http://www.rdwolff.com/content/about">Professor Richard D. Wolff</a> who could explain the relationship from an economic perspective.
+                </p>
+                <p>
+                In order to accomplish this project, I will have to build upon my knowledge of python in order to collect and aggregate various forms of data from websites, such as Wikipedia. Visualizing the final graphics will require using improving my understanding of <a href="http://d3js.org/">D3.js</a>. And finally, the data and information I collect will need to be open and sharable, made available through a simple database or a static CSV file.
+                </p>
+                <p>
+                The final piece will compliment existing reporting on The New York Times, The Guardian, Al Jazeera America, or The Intercept. 
+            </p>
+        </div>
+        <div>
+            <h3>INSTEAD OF ACQUIRING, WHAT COULD THE TECH INDUSTRY’S MONEY BE USED FOR? </h3>
+            <hr>
+            <p>
+                When a tech company acquires another for hundreds of millions or billions of dollars, it is hard to comprehend how massive that amount of money actually is. For example, how many people could be brought out of abject poverty and for how long if, say, $19 Billion dollars was used to deliver food and clean water to those suffering the most? Is the concentration of wealth towards the tech industry exaggerating income disparities in the United States? 
+                </p>
+                <p>
+                This will be explored by examining how <a href="https://app.enigma.io/table/com.crunchbase.info.companies.investments">capital is influencing the decisions of tech companies</a> and who, conversely, is adversely affected the most. Focusing on the <a href="https://www.opensecrets.org/lobby/">lobbying of legislation</a> on behalf of the software technology industry, I will show the movement of financial support away from social welfare programs and towards the weakening of regulations that that meaningfully restrict the tech industry. Data relating to the costs of company acquisitions can be found using <a href="https://app.enigma.io/table/com.crunchbase.info.companies.acquisition?row=8&col=0&page=1">CrunchBase Company Acquisitions dataset</a>, and income level data can be found in data available through the <a href="https://app.enigma.io/search/source/us.gov.census.income">Census</a>.
+                </p>
+                <p>
+                Collecting and determining what types of data are useful for making these monetary comparisons intelligible will require speaking to people familiar with the complexities of these financial instruments. Economists such as <a href="http://www.rdwolff.com/content/about">Professor Richard D. Wolff</a>, or <a href="http://www.yale.edu/macmillan/globaljustice/pogge.html">Professor Thomas Pogge</a>, who researches the systemic oppresion of the poor, can lead me in clarifying ways to represent these ideas.
+                </p>
+                <p>
+                To create this, significant work will have to be done to normalize the data into units that are comparable, which will require implementing statistical models in code. It will also require the rendering of complex dataset in the browser using <a href="http://d3js.org/">D3.js</a>. Lastly, the information and process for determining the final results will need to be publicly available, either through a static CSV file or a simple database.
+                </p>
+                <p>
+                The final piece will be at home amongst other technology-related reporting sites, such as TechCrunch, but will be better suited for a broader demographic, such as the readers of The New York Times, The Guardian, or Al Jazeera America.
 
-      </div>
-
-    </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/docs.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+            </p>
+        </div>
+    </body>
 </html>

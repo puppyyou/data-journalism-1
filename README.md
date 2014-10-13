@@ -1,2 +1,2 @@
-data-journalism
-===============
+datajournalism-finalprojectideas
+================================
